@@ -15,7 +15,7 @@ st.set_page_config(page_title="Telco Churn App", layout="wide")
 # load  dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\Dell\Desktop\Data Science Projects\Data Science In Python\My Churn ML Model\Telco-customer-churn(cleaned).csv")
+    df = pd.read_csv("Telco-customer-churn(cleaned).csv")
     return df
 
 df = load_data()
