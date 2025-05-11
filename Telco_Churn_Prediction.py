@@ -260,12 +260,11 @@ with tab2:
         input_df = input_df[X_train.columns]
 
         prediction = model.predict(input_df)[0]
-        prob = model.predict_proba(input_df)[0][1] * 100
 
         if prediction == 1:
-            st.error(f"⚠️ Customer is likely to churn.\n\n**Confidence: {prob:.2f}%**")
+            st.error(f"⚠️ Customer is likely to churn.")
         else:
-            st.success(f"✅ Customer is not likely to churn.\n\n**Confidence: {prob:.2f}%**")
+            st.success(f"✅ Customer is not likely to churn.")
 
         # Feature Importance
         st.markdown("---")
