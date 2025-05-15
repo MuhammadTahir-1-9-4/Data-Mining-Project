@@ -45,7 +45,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_resampled, y_resampled, te
 # Sidebar
 st.sidebar.title("⚙️ Model Configuration")
 n_estimators = st.sidebar.slider("n_estimators", 10, 500, 100)
-max_depth = st.sidebar.slider("max_depth", 1, 50, 27)
+max_depth = st.sidebar.slider("max_depth", 1, 50, None)
 min_samples_split = st.sidebar.slider("min_samples_split", 2, 10, 2)
 min_samples_leaf = st.sidebar.slider("min_samples_leaf", 1, 10, 1)
 
